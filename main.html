@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="mainstyle.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-
+SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" 
+/>
+<script src="script.js"></script>
+</head>
+<body>
+<!-----------------HEADER------------------------>
+    <header id="header">       
+    <a href="#home" class="logo">David<span>Gaspar</span></a>
+
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="#homr" class="active">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#project">Projects</a>
+        <a href="#language">Language</a>
+        <a href="#contact">Contact</a>
+        
+    </nav>
+
+    </header>
+<!-----------------HEADER------------------------>
+
+<!-----------------MAIN-------------------------->
+
+<section class="home" id="home">
+    <div class="home-img">
+        <img src="dp.png" alt="displayPicture">
+    </div>
+    <br>
+    <div class="home-content">
+
+        <h1>Greetings!<span>David here!</span></h1>
+        <h3>Newbie Programmer</h3>
+        <p>Hello, my name is David. I made this portfolio with a tutorial since i'm still a beginner.</p>
+      <div class="social-icons">
+    
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-itch-io"></i></a>
+
+      </div>
+      <a href="#" class="btn1">My Resume</a>
+
+    </div>
+</section>
+<hr>
+<!-----------------ABOUT-------------------------->
+<div class="about-heading" id="about">
+    <h1>About Me</h1>
+    
+</div>
+
+<div class="container">
+    <section class="about">
+        <div class="about-image">
+            <img src="bear.jpg" alt="bear">
+        </div>
+
+        <div class="about-content">
+            <h2>Hello!</h2>
+            <p>I'm currently a student at Red Deer Polytechnic studying the course of Software Development. 
+                I'm a newbie programmer learning Web development,Java and C#. I'm also interested in Game Development.</p>
+        </div>
+
+    </section>
+</div>
+<!-----------------PROJECTS-------------------------->
+<section id="projects">
+    <div class="about-heading">
+        <h1>Projects</h1> 
+    </div>
+
+<div class="card-container">
+
+<div class="card">
+    <img src="p3.jpg" alt="project1">
+    <div class="card-content">
+        <h3>Project 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+            et dolore magna aliqua.</p>
+        <a href="#" class="btn">Live Demo</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="p3.jpg" alt="project1">
+    <div class="card-content">
+        <h3>Project 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+            et dolore magna aliqua.</p>
+        <a href="#" class="btn">Live Demo</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="p3.jpg" alt="project1">
+    <div class="card-content">
+        <h3>Project 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+            et dolore magna aliqua.</p>
+        <a href="#" class="btn">Live Demo</a>
+    </div>
+</div>
+
+</div><!--container-end-->
+   
+</section>
+<!-----------------LANGUAGE-------------------------->
+<section id="language" id="language">
+    <div class="about-heading">
+        <h1>Language</h1> 
+    </div>
+<div class="skills-area">
+
+    <div class="skill">
+        <div class="skill-title">HTML</div>
+        <div class="skill-bar"></div>
+        <div class="html skill-fill">
+            <span class="skill-percent">35%</span>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-title">CSS</div>
+        <div class="skill-bar"></div>
+        <div class="css skill-fill">
+            <span class="skill-percent">35%</span>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-title">Javascript</div>
+        <div class="skill-bar"></div>
+        <div class="js skill-fill">
+            <span class="skill-percent">6%</span>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-title">Java</div>
+        <div class="skill-bar"></div>
+        <div class="java skill-fill">
+            <span class="skill-percent">40%</span>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-title">C#</div>
+        <div class="skill-bar"></div>
+        <div class="Csharp skill-fill">
+            <span class="skill-percent">12%</span>
+        </div>
+    </div>
+
+</div>
+
+
+    
+</section>
+
+<!-----------------CONTACT-ME-------------------------->
+<div class="contact-container" id="contact">
+    <form>
+        <h3>Contact Me</h3>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone no." required>
+        <textarea id="message" rows="4" placeholder="Write your message here"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<!-----------------JAVASCRIPT--------------------
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "gaspardavid235@gmail.com",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+    </script>-->
+</body>
+</html>
